@@ -5,9 +5,13 @@ export default {
     extend: {
       colors: {
         yellow: {
-          400: '#facc15',
-          500: '#eab308',
-          600: '#ca8a04',
+          100: '#fef7cd',
+          200: '#fdeea5',
+          300: '#fce467',
+          400: '#fbd522',
+          500: '#fbd522',
+          600: '#e6c01f',
+          800: '#a68516',
         }
       },
       animation: {
