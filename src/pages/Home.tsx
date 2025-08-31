@@ -45,8 +45,9 @@ const Home = () => {
           </svg>
         </motion.a>
       </div>
+      
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden px-4 sm:px-6">
         {/* 3D Background */}
         <Scene3D className="absolute inset-0 w-full h-full" />
         
@@ -118,20 +119,20 @@ const Home = () => {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/membership"
-                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black px-10 py-5 rounded-xl text-xl font-bold transition-all duration-300 flex items-center justify-center space-x-3 shadow-2xl hover:shadow-yellow-400/25"
+                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-bold transition-all duration-300 flex items-center justify-center space-x-2 sm:space-x-3 shadow-2xl hover:shadow-yellow-400/25"
                 >
-                  <Zap className="h-6 w-6" />
-                  <span>Start Your Journey</span>
-                  <ArrowRight className="h-6 w-6" />
+                  <Zap className="h-5 w-5 sm:h-6 sm:w-6" />
+                  <span>Start Journey</span>
+                  <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
               </motion.div>
               
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/trainers"
-                  className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-10 py-5 rounded-xl text-xl font-bold transition-all duration-300 backdrop-blur-sm"
+                  className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-bold transition-all duration-300 backdrop-blur-sm text-center"
                 >
-                  Meet Our Trainers
+                  Meet Trainers
                 </Link>
               </motion.div>
             </motion.div>

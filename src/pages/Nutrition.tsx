@@ -91,7 +91,7 @@ const Nutrition = () => {
   ];
 
   return (
-    <div className="pt-16 sm:pt-20">
+    <div>
       {/* Hero Section */}
       <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-green-900 via-black to-green-900 text-white overflow-hidden">
         {/* 3D Background */}

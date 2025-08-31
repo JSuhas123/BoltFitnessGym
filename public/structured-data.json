@@ -1,0 +1,175 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HealthClub",
+      "@id": "https://boltfitness-bengaluru.vercel.app/#organization",
+      "name": "Bolt Fitness Bengaluru",
+      "alternateName": "Bolt Fitness Doddanekkundi",
+      "description": "Premier fitness center in Bengaluru offering personal training, nutrition coaching, and state-of-the-art equipment in Doddanekkundi",
+      "url": "https://boltfitness-bengaluru.vercel.app",
+      "telephone": "+91-97415-63405",
+      "email": "boltfitness1.0@gmail.com",
+      "priceRange": "₹₹",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, Card, UPI",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2nd Floor, No 1 & 2, Malleshpalya Main Rd, next to Zudio, Vignan Nagar",
+        "addressLocality": "Doddanekkundi",
+        "addressRegion": "Karnataka",
+        "postalCode": "560075",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "12.9716",
+        "longitude": "77.5946"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "05:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "06:00",
+          "closes": "20:00"
+        }
+      ],
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Personal Training",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Nutrition Coaching",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Strength Training Equipment",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Cardio Equipment",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Yoga Classes",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "HIIT Training",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Free Parking",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Air Conditioning",
+          "value": true
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/boltfitnessbengaluru",
+        "https://www.instagram.com/boltfitnessbengaluru"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Fitness Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Personal Training",
+              "description": "One-on-one fitness coaching with certified trainers"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nutrition Coaching",
+              "description": "Personalized nutrition plans and dietary guidance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Group Fitness Classes",
+              "description": "HIIT, Yoga, and specialized group training sessions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://boltfitness-bengaluru.vercel.app/#website",
+      "url": "https://boltfitness-bengaluru.vercel.app",
+      "name": "Bolt Fitness Bengaluru",
+      "description": "Premier fitness center in Bengaluru - Doddanekkundi",
+      "publisher": {
+        "@id": "https://boltfitness-bengaluru.vercel.app/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": "https://boltfitness-bengaluru.vercel.app/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://boltfitness-bengaluru.vercel.app/",
+            "name": "Home"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://boltfitness-bengaluru.vercel.app/about",
+            "name": "About"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://boltfitness-bengaluru.vercel.app/trainers",
+            "name": "Trainers"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://boltfitness-bengaluru.vercel.app/nutrition",
+            "name": "Nutrition"
+          }
+        }
+      ]
+    }
+  ]
+}

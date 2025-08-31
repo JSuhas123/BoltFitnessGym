@@ -66,7 +66,7 @@ const NutritionForm: React.FC = () => {
 
   return (
     <motion.div
-      className="bg-gray-50 p-6 sm:p-8 rounded-lg"
+      className="bg-gray-50 p-4 sm:p-6 md:p-8 rounded-lg"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}

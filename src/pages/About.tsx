@@ -28,9 +28,9 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-16 sm:pt-20">
+    <div>
       {/* Hero Section */}
-      <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
+      <section className="relative py-8 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
         {/* 3D Background */}
         <Enhanced3DScene className="absolute inset-0 w-full h-full opacity-30" intensity="low" />
         
@@ -39,14 +39,14 @@ const About = () => {
         
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
               <motion.h1 
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
@@ -68,7 +68,7 @@ const About = () => {
               </motion.h1>
               
               <motion.p 
-                className="text-lg sm:text-xl text-gray-300 mb-6 leading-relaxed"
+                className="text-base sm:text-lg md:text-xl text-gray-300 mb-4 sm:mb-6 leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}

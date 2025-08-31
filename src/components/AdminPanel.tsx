@@ -184,36 +184,36 @@ const AdminPanel: React.FC = () => {
         )}
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8">
           <button
             onClick={handleDownloadCSV}
-            className="flex items-center gap-2 bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+            className="flex items-center justify-center gap-2 bg-blue-600 px-4 sm:px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
           >
-            <Download className="w-5 h-5" />
+            <Download className="w-4 h-4 sm:w-5 sm:h-5" />
             Download CSV
           </button>
           
           <button
             onClick={handleDownloadExcel}
-            className="flex items-center gap-2 bg-green-600 px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
+            className="flex items-center justify-center gap-2 bg-green-600 px-4 sm:px-6 py-3 rounded-lg hover:bg-green-700 transition-colors text-sm sm:text-base"
           >
-            <Download className="w-5 h-5" />
+            <Download className="w-4 h-4 sm:w-5 sm:h-5" />
             Download Excel
           </button>
           
           <button
             onClick={() => setShowSubmissions(!showSubmissions)}
-            className="flex items-center gap-2 bg-purple-600 px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors"
+            className="flex items-center justify-center gap-2 bg-purple-600 px-4 sm:px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors text-sm sm:text-base"
           >
-            <Eye className="w-5 h-5" />
+            <Eye className="w-4 h-4 sm:w-5 sm:h-5" />
             {showSubmissions ? 'Hide' : 'View'} Submissions
           </button>
           
           <button
             onClick={handleClearData}
-            className="flex items-center gap-2 bg-red-600 px-6 py-3 rounded-lg hover:bg-red-700 transition-colors"
+            className="flex items-center justify-center gap-2 bg-red-600 px-4 sm:px-6 py-3 rounded-lg hover:bg-red-700 transition-colors text-sm sm:text-base"
           >
-            <Trash2 className="w-5 h-5" />
+            <Trash2 className="w-4 h-4 sm:w-5 sm:h-5" />
             Clear All Data
           </button>
         </div>

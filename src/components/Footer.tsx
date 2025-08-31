@@ -40,8 +40,9 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 mb-4">
-              Transform your body, transform your life. Join Bolt Fitness and experience 
-              the ultimate fitness journey with state-of-the-art equipment and expert trainers.
+              Premier fitness center in Bengaluru offering state-of-the-art equipment, 
+              expert personal training, and comprehensive wellness programs. Transform your 
+              fitness journey with us in the heart of Doddanekkundi.
             </p>
           </div>
 
@@ -49,17 +50,25 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-3">
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4 text-yellow-400" />
-                <span className="text-gray-400 text-sm">123 Fitness Street, City, State 12345</span>
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-4 w-4 text-yellow-400 mt-1 flex-shrink-0" />
+                <span className="text-gray-400 text-sm">
+                  2nd Floor, No 1 & 2, Malleshpalya Main Rd,<br />
+                  next to Zudio, Vignan Nagar,<br />
+                  Doddanekkundi, Bengaluru, Karnataka 560075
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-yellow-400" />
-                <span className="text-gray-400 text-sm">(555) 123-4567</span>
+                <a href="tel:+919741563405" className="text-gray-400 text-sm hover:text-yellow-400 transition-colors">
+                  +91 97415 63405
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-yellow-400" />
-                <span className="text-gray-400 text-sm">info@boltfitness.com</span>
+                <a href="mailto:boltfitness1.0@gmail.com" className="text-gray-400 text-sm hover:text-yellow-400 transition-colors">
+                  boltfitness1.0@gmail.com
+                </a>
               </div>
             </div>
           </div>

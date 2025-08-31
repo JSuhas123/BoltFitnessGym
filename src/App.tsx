@@ -2,6 +2,7 @@ import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-route
 import AdminPanel from './components/AdminPanel';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import SEO from './components/SEO';
 import About from './pages/About';
 import Home from './pages/Home';
 import Nutrition from './pages/Nutrition';
@@ -9,10 +10,11 @@ import Trainers from './pages/Trainers';
 
 const AppContent = () => {
   const location = useLocation();
-  const isAdminRoute = location.pathname === '/admin-nutrition-data-management';
+  const isAdminRoute = location.pathname === '/admin-nutrition-data-management' || location.pathname === '/admin';
 
   return (
     <div className="min-h-screen bg-black text-white">
+      <SEO />
       {!isAdminRoute && <Header />}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,6 +22,7 @@ const AppContent = () => {
         <Route path="/trainers" element={<Trainers />} />
         <Route path="/nutrition" element={<Nutrition />} />
         <Route path="/admin-nutrition-data-management" element={<AdminPanel />} />
+        <Route path="/admin" element={<AdminPanel />} />
       </Routes>
       {!isAdminRoute && <Footer />}
     </div>
