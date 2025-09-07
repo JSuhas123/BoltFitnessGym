@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -26,24 +26,24 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <motion.div
-              className="relative"
-              whileHover={{ scale: 1.1, rotate: 180 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Zap className="h-10 w-10 text-yellow-400" />
-              <motion.div
-                className="absolute inset-0 bg-yellow-400 rounded-full opacity-20"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              />
-            </motion.div>
-            <motion.span 
-              className="text-3xl font-black text-white tracking-wider"
-              whileHover={{ scale: 1.05 }}
-            >
-              BOLT
-              <span className="text-yellow-400 ml-1">FITNESS</span>
-            </motion.span>
+  className="relative"
+  whileHover={{ scale: 1.1 }}
+  transition={{ duration: 0.3 }}
+>
+  <img 
+    src="/images/blogo.png" 
+    alt="Bolt Fitness Logo" 
+    className="h-14 w-14 object-contain"  // 🔥 increased from h-10 w-10
+  />
+</motion.div>
+
+<motion.span 
+  className="text-3xl font-black text-white tracking-wider"
+  whileHover={{ scale: 1.05 }}
+>
+  BOLT
+  <span className="text-yellow-400 ml-1">FITNESS</span>
+</motion.span>
           </Link>
 
           {/* Desktop Navigation */}

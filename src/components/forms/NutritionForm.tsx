@@ -87,7 +87,7 @@ const NutritionForm: React.FC = () => {
 
           <ProgressBar 
             current={analytics.totalGuideDownloads} 
-            total={200} 
+            total={250} 
             label="Guide Availability" 
           />
 
@@ -250,13 +250,13 @@ const NutritionForm: React.FC = () => {
           <AlertCircle className="h-16 w-16 text-yellow-500 mx-auto mb-4" />
           <h3 className="text-xl font-bold text-gray-900 mb-2">Guide Currently Unavailable</h3>
           <p className="text-gray-600 mb-6">
-            We've reached our limit of 200 free nutrition guides. Check back next month for new availability!
+            We've reached our limit of 250 free nutrition guides. Check back next month for new availability!
           </p>
           <motion.button 
             className="bg-gray-400 text-white py-3 px-6 rounded-lg font-semibold cursor-not-allowed"
             disabled
           >
-            Limit Reached ({analytics.totalGuideDownloads}/200)
+            Limit Reached ({analytics.totalGuideDownloads}/250)
           </motion.button>
         </motion.div>
       )}

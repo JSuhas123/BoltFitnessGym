@@ -73,8 +73,8 @@ const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                Founded in 2010, Bolt Fitness has been at the forefront of the fitness revolution, 
-                helping thousands of individuals transform their lives through dedicated training and support.
+                Founded in 2025, Bolt Fitness has been at the forefront of the fitness revolution, 
+                helping hundreds of individuals transform their lives through dedicated training and support.
               </motion.p>
               
               <motion.p 
@@ -162,7 +162,7 @@ const About = () => {
             >
               <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
-                  src="https://images.pexels.com/photos/1552108/pexels-photo-1552108.jpeg"
+                  src="/images/story.jpg"
                   alt="Founder story"
                   className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 hover:scale-105"
                 />
@@ -190,7 +190,7 @@ const About = () => {
                   where members can achieve their personal best.
                 </p>
                 <p>
-                  Today, we proudly serve over 2,000 active members, each with their own unique fitness 
+                  Today, we proudly serve over 400 active members, each with their own unique fitness 
                   journey. Our team of certified trainers, nutritionists, and wellness experts work 
                   together to ensure every member receives the personalized attention they deserve.
                 </p>

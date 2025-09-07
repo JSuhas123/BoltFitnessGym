@@ -2,12 +2,12 @@ import { useCallback, useEffect, useState } from 'react';
 import { FitnessGoal, NutritionAnalytics, NutritionFormData, NutritionGuide } from '../types';
 import { adminDataManager } from '../utils/adminDataManager';
 import {
-    calculateBMR,
-    calculateCalorieTarget,
-    calculateMacroTargets,
-    calculateTDEE,
-    generatePersonalizedRecommendations,
-    validateNutritionForm
+  calculateBMR,
+  calculateCalorieTarget,
+  calculateMacroTargets,
+  calculateTDEE,
+  generatePersonalizedRecommendations,
+  validateNutritionForm
 } from '../utils/nutritionCalculations';
 
 export const useNutritionForm = () => {
@@ -147,7 +147,7 @@ export const useNutritionForm = () => {
 export const useNutritionAnalytics = () => {
   const [analytics, setAnalytics] = useState<NutritionAnalytics>({
     totalGuideDownloads: 0,
-    availableGuides: 200,
+    availableGuides: 250,
     popularFitnessGoals: [],
     conversionRate: 0
   });
@@ -159,7 +159,7 @@ export const useNutritionAnalytics = () => {
       
       setAnalytics({
         totalGuideDownloads: currentCount,
-        availableGuides: Math.max(0, 200 - currentCount),
+        availableGuides: Math.max(0, 250 - currentCount),
         popularFitnessGoals: Object.entries(goalCounts).map(([goal, count]) => ({
           goal: goal as FitnessGoal,
           count: count as number

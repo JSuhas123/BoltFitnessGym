@@ -1,71 +1,69 @@
 import { motion } from 'framer-motion';
-import { Award, Calendar, Star, Users } from 'lucide-react';
+import { Star } from 'lucide-react';
 import Enhanced3DScene from '../components/3D/Enhanced3DScene';
 import EnhancedFloatingElements from '../components/3D/EnhancedFloatingElements';
 
 const Trainers = () => {
   const trainers = [
-    {
-      name: 'Sarah Mitchell',
-      title: 'Head Personal Trainer & Strength Specialist',
-      experience: '8 years',
-      certifications: ['ACSM-CPT', 'NASM-CES', 'Precision Nutrition Level 1'],
-      specialties: ['Strength Training', 'Olympic Lifting', 'Athletic Performance'],
-      image: 'https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg',
-      rating: 4.9,
-      clients: 150
-    },
-    {
-      name: 'Mike Rodriguez',
-      title: 'HIIT & Functional Training Expert',
-      experience: '6 years',
-      certifications: ['NASM-CPT', 'CrossFit Level 2', 'FMS Level 2'],
-      specialties: ['HIIT Training', 'Functional Movement', 'Weight Loss'],
-      image: 'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg',
-      rating: 4.8,
-      clients: 120
-    },
-    {
-      name: 'Emma Thompson',
-      title: 'Yoga & Wellness Instructor',
-      experience: '10 years',
-      certifications: ['RYT-500', 'Yin Yoga Certified', 'Meditation Teacher'],
-      specialties: ['Vinyasa Yoga', 'Meditation', 'Stress Management'],
-      image: 'https://images.pexels.com/photos/1552103/pexels-photo-1552103.jpeg',
-      rating: 5.0,
-      clients: 200
-    },
-    {
-      name: 'David Park',
-      title: 'Sports Performance & Rehabilitation',
-      experience: '12 years',
-      certifications: ['CSCS', 'ATC', 'SFMA Level 2'],
-      specialties: ['Injury Prevention', 'Sports Performance', 'Corrective Exercise'],
-      image: 'https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg',
-      rating: 4.9,
-      clients: 85
-    },
-    {
-      name: 'Lisa Chen',
-      title: 'Nutrition & Lifestyle Coach',
-      experience: '7 years',
-      certifications: ['RD', 'NASM-CPT', 'Behavior Change Specialist'],
-      specialties: ['Nutrition Planning', 'Lifestyle Coaching', 'Body Composition'],
-      image: 'https://images.pexels.com/photos/1552108/pexels-photo-1552108.jpeg',
-      rating: 4.8,
-      clients: 180
-    },
-    {
-      name: 'Alex Johnson',
-      title: 'Group Fitness & Dance Instructor',
-      experience: '5 years',
-      certifications: ['ACE-GFI', 'Zumba Certified', 'Barre Above Certified'],
-      specialties: ['Group Fitness', 'Dance Fitness', 'Barre Classes'],
-      image: 'https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg',
-      rating: 4.7,
-      clients: 220
-    }
-  ];
+  {
+    name: 'Vinod',
+    title: 'Head Personal Trainer & Strength Specialist',
+    experience: '10+ years experience',
+    specialties: ['Strength Training', 'Power Lifting', 'Athletic Performance'],
+    image: '/images/trainers/.jpg',
+    rating: 4.9,
+    clients: 150
+  },
+  {
+    name: 'Satish U',
+    title: 'HIIT & Functional Training Expert',
+    experience: '20+ years experience',
+    certifications: ['NASM-CPT', 'CrossFit Level 2', 'FMS Level 2'],
+    specialties: ['HIIT Training', 'Functional Movement', 'Weight Loss'],
+    image: '/images/trainers/satish.jpg',
+    rating: 4.8,
+    clients: 120
+  },
+  {
+    name: 'Khadar Basha',
+    title: 'Sports Performance & Rehabilitation',
+    experience: '12+ years experience',
+    certifications: ['CSCS', 'ATC', 'SFMA Level 2'],
+    specialties: ['Injury Prevention', 'Sports Performance', 'Corrective Exercise'],
+    image: '/images/trainers/khadar.jpg',
+    rating: 4.9,
+    clients: 85
+  },
+  {
+    name: 'William',
+    title: 'Nutrition & Lifestyle Coach',
+    experience: '12+ years experience',
+    certifications: ['RD', 'NASM-CPT', 'Behavior Change Specialist'],
+    specialties: ['Nutrition Planning', 'Lifestyle Coaching', 'Body Composition'],
+    image: '/images/trainers/william.jpg',
+    rating: 4.8,
+    clients: 180
+  },
+  {
+    name: 'Ritesh',
+    title: 'Group Fitness & Dance Instructor',
+    experience: '2+ years experience',
+    certifications: ['ACE-GFI', 'Zumba Certified', 'Barre Above Certified'],
+    specialties: ['Group Fitness', 'Sports Performance', 'Barre Classes'],
+    image: '/images/trainers/ritesh.jpg',
+    rating: 4.7,
+  },
+  {
+    name: 'Lohith',
+    title: 'Group Fitness & Dance Instructor',
+    experience: '2+ years experience',
+    certifications: ['ACE-GFI', 'Zumba Certified', 'Barre Above Certified'],
+    specialties: ['Group Fitness', 'Sports Performanc', 'Barre Classes'],
+    image: '/images/trainers/lohith.jpg',
+    rating: 4.7,
+  }
+];
+
 
   return (
     <div>
@@ -146,20 +144,13 @@ const Trainers = () => {
 
                 {/* Trainer Info */}
                 <div className="p-6">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">{trainer.name}</h3>
-                  <p className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">{trainer.title}</p>
-
-                  {/* Stats */}
-                  <div className="flex justify-between text-sm text-gray-600 mb-4">
-                    <div className="flex items-center space-x-1">
-                      <Calendar className="h-4 w-4" />
-                      <span>{trainer.experience}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Users className="h-4 w-4" />
-                      <span>{trainer.clients} clients</span>
-                    </div>
+                  <div className="flex justify-between items-center mb-1">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">{trainer.name}</h3>
+                    <span className="text-sm font-semibold text-yellow-600 bg-yellow-100 px-2 py-1 rounded-full">
+                      {trainer.experience}
+                    </span>
                   </div>
+                  
 
                   {/* Specialties */}
                   <div className="mb-4">
@@ -168,19 +159,6 @@ const Trainers = () => {
                       {trainer.specialties.map((specialty, idx) => (
                         <span key={`${trainer.name}-specialty-${idx}`} className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">
                           {specialty}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Certifications */}
-                  <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">Certifications:</h4>
-                    <div className="flex flex-wrap gap-1">
-                      {trainer.certifications.map((cert, idx) => (
-                        <span key={`${trainer.name}-cert-${idx}`} className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded flex items-center space-x-1">
-                          <Award className="h-3 w-3" />
-                          <span>{cert}</span>
                         </span>
                       ))}
                     </div>
@@ -206,12 +184,11 @@ const Trainers = () => {
             <p className="text-lg sm:text-xl text-gray-600">Numbers that speak to our commitment to your success</p>
           </motion.div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
               { value: "50+", label: "Combined Years of Experience" },
-              { value: "955", label: "Active Training Clients" },
+              { value: "225", label: "Active Training Clients" },
               { value: "4.9", label: "Average Trainer Rating" },
-              { value: "25+", label: "Professional Certifications" }
             ].map((stat, index) => (
               <motion.div 
                 key={stat.label}

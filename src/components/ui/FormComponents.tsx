@@ -43,7 +43,7 @@ export const FormInput: React.FC<FormInputProps> = ({
         }}
         placeholder={placeholder}
         required={required}
-        className={`w-full p-3 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-200 ${
+        className={`w-full p-3 border rounded-lg text-black focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-200 ${
           error ? 'border-red-500' : 'border-gray-300'
         }`}
       />
@@ -95,7 +95,7 @@ export const FormSelect: React.FC<FormSelectProps> = ({
         value={value || ''}
         onChange={(e) => onChange(e.target.value)}
         required={required}
-        className={`w-full p-3 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-200 ${
+        className={`w-full p-3 border rounded-lg text-black focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-200 ${
           error ? 'border-red-500' : 'border-gray-300'
         }`}
       >
@@ -158,7 +158,7 @@ export const FormTextarea: React.FC<FormTextareaProps> = ({
         placeholder={placeholder}
         rows={rows}
         required={required}
-        className={`w-full p-3 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-200 resize-vertical ${
+        className={`w-full p-3 border rounded-lg text-black focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-200 resize-vertical ${
           error ? 'border-red-500' : 'border-gray-300'
         }`}
       />
