@@ -187,7 +187,7 @@ const Trainers = () => {
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
               { value: "50+", label: "Combined Years of Experience" },
-              { value: "225", label: "Active Training Clients" },
+              { value: "400", label: "Active Training Clients" },
               { value: "4.9", label: "Average Trainer Rating" },
             ].map((stat, index) => (
               <motion.div 

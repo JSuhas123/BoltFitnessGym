@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Clock, Mail, MapPin, Phone, Zap } from 'lucide-react';
+import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -33,7 +33,6 @@ const Footer = () => {
                 whileHover={{ rotate: 180, scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
-                <Zap className="h-10 w-10 text-yellow-400" />
               </motion.div>
               <span className="text-3xl font-black">
                 BOLT <span className="text-yellow-400">FITNESS</span>
@@ -42,7 +41,7 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               Premier fitness center in Bengaluru offering state-of-the-art equipment, 
               expert personal training, and comprehensive wellness programs. Transform your 
-              fitness journey with us in the heart of Doddanekkundi.
+              fitness journey with us in the heart of Vijnan nagar.
             </p>
           </div>
 
@@ -79,9 +78,8 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Clock className="h-4 w-4 text-yellow-400" />
-                <span className="text-gray-400 text-sm">Mon-Fri: 5:00 AM - 10:00 PM</span>
+                <span className="text-gray-400 text-sm">Mon-Sun: 5:00 AM - 11:00 PM</span>
               </div>
-              <div className="text-gray-400 text-sm ml-6">Sat-Sun: 6:00 AM - 8:00 PM</div>
             </div>
           </div>
         </div>

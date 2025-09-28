@@ -73,7 +73,7 @@ const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                Founded in 2025, Bolt Fitness has been at the forefront of the fitness revolution, 
+                Founded in 2024, Bolt Fitness has been at the forefront of the fitness revolution, 
                 helping hundreds of individuals transform their lives through dedicated training and support.
               </motion.p>
               
@@ -181,7 +181,7 @@ const About = () => {
               <div className="space-y-4 text-gray-600 text-sm sm:text-base leading-relaxed">
                 <p>
                   Bolt Fitness was born from a simple belief: everyone deserves access to quality fitness 
-                  facilities and expert guidance. Our founder, Alex Thompson, started this journey after 
+                  facilities and expert guidance. Our founders started this journey after 
                   experiencing firsthand how proper training and motivation can completely transform lives.
                 </p>
                 <p>
@@ -190,8 +190,7 @@ const About = () => {
                   where members can achieve their personal best.
                 </p>
                 <p>
-                  Today, we proudly serve over 400 active members, each with their own unique fitness 
-                  journey. Our team of certified trainers, nutritionists, and wellness experts work 
+                  Our team of certified trainers, nutritionists, and wellness experts work 
                   together to ensure every member receives the personalized attention they deserve.
                 </p>
               </div>
