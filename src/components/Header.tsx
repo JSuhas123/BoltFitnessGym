@@ -36,13 +36,6 @@ const Header = () => {
                 className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 object-contain"
               />
             </motion.div>
-            <motion.span 
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white tracking-wider"
-              whileHover={{ scale: 1.05 }}
-            >
-              BOLT{' '}
-              <span className="text-yellow-400">FITNESS</span>
-            </motion.span>
           </Link>
 
           {/* Desktop Navigation */}
