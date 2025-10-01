@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Award, Flame, Play, Users, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import FloatingElements from '../components/3D/FloatingElements';
-import Scene3D from '../components/3D/Scene3D';
 
 const Home = () => {
 
@@ -12,12 +10,12 @@ const Home = () => {
   return (
     <div>
       {/* Floating Social Media Links */}
-      <div className="fixed left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-50 flex flex-col gap-3 sm:gap-4">
+      <div className="fixed left-1 xs:left-2 sm:left-3 md:left-4 top-1/2 transform -translate-y-1/2 z-50 flex flex-col gap-2 xs:gap-3 sm:gap-4">
         <motion.a
           href="https://www.instagram.com/bolt_fitnessindia?igsh=bXQ3NTlmMHU3ZGJ5&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gradient-to-r from-pink-500 to-purple-600 p-2 sm:p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+          className="bg-gradient-to-r from-pink-500 to-purple-600 p-2 xs:p-2.5 sm:p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 min-w-[40px] min-h-[40px] xs:min-w-[44px] xs:min-h-[44px] sm:min-w-[48px] sm:min-h-[48px] flex items-center justify-center"
           whileHover={{ scale: 1.1, rotate: 5 }}
           whileTap={{ scale: 0.95 }}
           initial={{ x: -100, opacity: 0 }}
@@ -33,7 +31,7 @@ const Home = () => {
           href="https://www.facebook.com/share/1AwXnjTmZx/?mibextid=wwXIfr"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-blue-600 p-2 sm:p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+          className="bg-blue-600 p-2 xs:p-2.5 sm:p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 min-w-[40px] min-h-[40px] xs:min-w-[44px] xs:min-h-[44px] sm:min-w-[48px] sm:min-h-[48px] flex items-center justify-center"
           whileHover={{ scale: 1.1, rotate: -5 }}
           whileTap={{ scale: 0.95 }}
           initial={{ x: -100, opacity: 0 }}
@@ -47,13 +45,7 @@ const Home = () => {
       </div>
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden px-3 sm:px-6">
-  {/* 3D Background */}
-  <Scene3D className="absolute inset-0 w-full h-full" />
-
-  {/* Floating Elements */}
-  <FloatingElements />
-
+<section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
   {/* Background Image with Overlay */}
   <div className="absolute inset-0 opacity-30">
     <img
@@ -64,102 +56,61 @@ const Home = () => {
     <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
   </div>
 
-  {/* Content */}
-  <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-2 sm:px-6 md:px-8">
+        {/* Content */}
+        <div className="relative z-10 text-center text-white w-full max-w-6xl mx-auto px-3 xs:px-4 sm:px-6 md:px-8 py-4 xs:py-6 sm:py-8 md:py-12">
+    <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-tight">
+      <span className="block bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-2 sm:mb-3">
+        TRANSFORM YOUR
+      </span>
+      <span className="block text-yellow-400">LIMITS</span>
+    </h1>
+
+    <p className="mt-6 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 font-light max-w-2xl sm:max-w-3xl mx-auto leading-relaxed px-2">
+      Unleash your potential with{" "}
+      <span className="text-yellow-400 font-semibold">
+        cutting-edge technology
+      </span>{" "}
+      and expert guidance
+    </p>
+
+    {/* CTA Buttons */}
+    <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-stretch sm:items-center max-w-2xl mx-auto px-2">
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl text-sm sm:text-base md:text-lg font-bold transition-all duration-300 flex items-center justify-center gap-2 shadow-2xl hover:shadow-yellow-400/25 w-full sm:w-auto min-h-[48px]"
+      >
+        <Zap className="h-5 w-5" />
+        <span>Start Journey</span>
+        <ArrowRight className="h-5 w-5" />
+      </motion.button>
+
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl text-sm sm:text-base md:text-lg font-bold transition-all duration-300 backdrop-blur-sm text-center w-full sm:w-auto min-h-[48px]"
+      >
+        Meet Trainers
+      </motion.button>
+    </div>
+
+    {/* Scroll Indicator */}
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2"
+      animate={{ y: [0, 10, 0] }}
+      transition={{ duration: 2, repeat: Infinity }}
     >
-      <motion.h1
-        className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight px-1"
-        initial={{ scale: 0.8 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-      >
-        <motion.span
-          className="block bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
-          animate={{
-            backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-          }}
-          transition={{ duration: 3, repeat: Infinity }}
-        >
-          TRANSFORM YOUR
-        </motion.span>
-        <motion.span
-          className="block text-yellow-400 relative"
-          whileHover={{ scale: 1.05 }}
-        >
-          LIMITS
-          <motion.div
-            className="absolute -inset-2 bg-yellow-400/20 rounded-lg -z-10"
-            animate={{
-              scale: [1, 1.05, 1],
-              opacity: [0.2, 0.4, 0.2],
-            }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
-        </motion.span>
-      </motion.h1>
-
-      <motion.p
-        className="text-sm xs:text-base sm:text-lg md:text-2xl lg:text-3xl mb-6 sm:mb-10 md:mb-12 text-gray-300 font-light px-2 sm:px-0"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 1 }}
-      >
-        Unleash your potential with{" "}
-        <span className="text-yellow-400 font-semibold">
-          cutting-edge technology
-        </span>{" "}
-        and expert guidance
-      </motion.p>
-
-      {/* Buttons */}
-      <motion.div
-        className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.8 }}
-      >
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Link
-            to="/membership"
-            className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black px-5 sm:px-10 py-3 sm:py-5 rounded-xl text-base sm:text-xl font-bold transition-all duration-300 flex items-center justify-center space-x-2 sm:space-x-3 shadow-2xl hover:shadow-yellow-400/25 w-full sm:w-auto"
-          >
-            <Zap className="h-5 w-5 sm:h-6 sm:w-6" />
-            <span>Start Journey</span>
-            <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />
-          </Link>
-        </motion.div>
-
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Link
-            to="/trainers"
-            className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-5 sm:px-10 py-3 sm:py-5 rounded-xl text-base sm:text-xl font-bold transition-all duration-300 backdrop-blur-sm text-center w-full sm:w-auto"
-          >
-            Meet Trainers
-          </Link>
-        </motion.div>
-      </motion.div>
+      <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-yellow-400 rounded-full flex justify-center">
+        <motion.div
+          className="w-1 h-2 sm:h-3 bg-yellow-400 rounded-full mt-2"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
+      </div>
     </motion.div>
   </div>
-
-  {/* Scroll Indicator (hidden on very small screens) */}
-  <motion.div
-    className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 hidden xs:block"
-    animate={{ y: [0, 10, 0] }}
-    transition={{ duration: 2, repeat: Infinity }}
-  >
-    <div className="w-4 h-7 sm:w-6 sm:h-10 border-2 border-yellow-400 rounded-full flex justify-center">
-      <motion.div
-        className="w-1 h-2 sm:h-3 bg-yellow-400 rounded-full mt-1 sm:mt-2"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      />
-    </div>
-  </motion.div>
 </section>
+
 
 
       {/* YouTube Video Section */}
@@ -231,7 +182,7 @@ const Home = () => {
                   allowFullScreen
                 />
                 
-                {/* Play Button Overlay (optional - for custom styling) */}
+                {/* Play Button Overlay */}
                 <motion.div
                   className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                   whileHover={{ opacity: 1 }}
@@ -266,7 +217,7 @@ const Home = () => {
             transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
           />
         </div>
-      </section>  
+      </section>
 
       {/* Features Section */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-100 relative overflow-hidden">
