@@ -34,9 +34,6 @@ const Footer = () => {
                 transition={{ duration: 0.3 }}
               >
               </motion.div>
-              <span className="text-3xl font-black">
-                BOLT <span className="text-yellow-400">FITNESS</span>
-              </span>
             </div>
             <p className="text-gray-400 mb-4">
               Premier fitness center in Bengaluru offering state-of-the-art equipment, 
@@ -59,7 +56,7 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-yellow-400" />
                 <a href="tel:+919741563405" className="text-gray-400 text-sm hover:text-yellow-400 transition-colors">
-                  +91 97415 63405
+                  +91 90363 08701
                 </a>
               </div>
               <div className="flex items-center space-x-2">
