@@ -40,8 +40,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-400 mb-4">
               Premier fitness center in Bengaluru offering state-of-the-art equipment, 
-              expert personal training, and comprehensive wellness programs. Transform your 
-              fitness journey with us in the heart of Vijnan nagar.
+              expert personal training, and comprehensive wellness programs.
             </p>
           </div>
 
