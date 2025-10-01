@@ -93,16 +93,6 @@ const Nutrition = () => {
             Unlock your potential with personalized nutrition guidance designed to complement your fitness journey 
             and accelerate your results.
           </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            className="flex items-center justify-center space-x-2 bg-yellow-400/10 backdrop-blur-sm border border-yellow-400/30 rounded-lg p-4 inline-block"
-          >
-            <Apple className="h-5 w-5 text-yellow-400" />
-            <p className="text-yellow-300 font-semibold">Expert nutrition coaching included with Premium & Elite memberships</p>
-          </motion.div>
         </div>
       </section>
 
